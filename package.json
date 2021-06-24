@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "yarn nodemon",
-    "lint": "yarn eslint --ext .ts ./src/**/*.ts",
-    "fix_lint": "yarn eslint --fix --ext .ts ./src/**/*.ts",
+    "lint": "yarn eslint --ext .ts ./src/**/*.ts *.ts",
+    "fix_lint": "yarn eslint --fix --ext .ts ./src/**/*.ts *.ts",
     "clean": "yarn rimraf .dist",
     "build": "yarn clean && yarn babel src/ --out-dir .dist --extensions .ts --quiet",
     "start": "yarn build && node .dist/main.js"
@@ -53,6 +53,7 @@
     "moment": "^2.24.0",
     "nodemon": "^2.0.2",
     "reflect-metadata": "^0.1.13",
+    "socket.io": "^4.1.2",
     "typeorm": "^0.2.32"
   }
 }

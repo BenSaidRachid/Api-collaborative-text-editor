@@ -7,6 +7,7 @@
     "allowJs": false,
     "noEmit": true,
     "strict": true,
+    "noImplicitAny": false,
     "module": "commonjs",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -16,7 +17,7 @@
     "sourceMap": true,
     "types": [],
   },
-  "include": ["src"],
+  "include": ["src", "definition.d.ts"],
   "exclude": [
     "node_modules"
   ]
